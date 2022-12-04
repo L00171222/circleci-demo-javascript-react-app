@@ -5,9 +5,9 @@
      jobs:
        - test
  jobs:
-    build:
-        docker:
-          - image: cimg/node:14.13.0
-        steps:
-          - checkout
-          - run: node --version
+   test:
+     docker:
+       - image: cimg/node:14.13.0
+     steps:
+       - checkout
+       - run: node --version
